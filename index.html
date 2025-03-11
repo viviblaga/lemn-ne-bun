@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -56,6 +55,23 @@
         <h2>Contact</h2>
         <p>Email: <a href="mailto:vivianablaga@yahoo.com">vivianablaga@yahoo.com</a></p>
         <p>Telefon: <a href="tel:+40773924238">0773 924 238</a></p>
+
+        <h3>Comandă Produse</h3>
+        <form action="/trimite-comanda" method="POST">
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume" required><br><br>
+
+            <label for="prenume">Prenume:</label>
+            <input type="text" id="prenume" name="prenume" required><br><br>
+
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" required pattern="[0-9]{10}" placeholder="Ex: 0712345678"><br><br>
+
+            <label for="comanda">Comanda:</label>
+            <textarea id="comanda" name="comanda" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Trimite Comanda">
+        </form>
     </section>
 
     <footer>
